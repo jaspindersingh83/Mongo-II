@@ -21989,7 +21989,6 @@
     "body": "<pre><code>function GET() {\n        var data = [];\n        for(x = 0; x &lt; arguments.length; ++x)\n            data.push(location.href.match(new RegExp(\"/\\?\".concat(arguments[x],\"=\",\"([^\\n&amp;]*)\")))[1])\n                return data;\n    }\n\n\nexample:\ndata = GET(\"id\",\"name\",\"foo\");\nquery string : ?id=3&amp;name=jet&amp;foo=b\nreturns:\n    data[0] // 3\n    data[1] // jet\n    data[2] // b\nor\n    alert(GET(\"id\")[0]) // return 3\n</code></pre>\n",
     "score": 35,
     "tags": [
-
     ],
     "acceptedAnswerID": null,
     "user": null
